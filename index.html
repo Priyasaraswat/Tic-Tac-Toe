@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main | Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1><span class="text1">Tic </span><span class="text2">Tac </span><span class="text3">Toe</span></h1>
+  <div class="container">
+    <div class="message">
+    <div class="playflield">
+
+      <div id="0" class="box b-right b-bottom"></div>
+      <div id="1" class="box b-right b-bottom"></div>
+      <div id="2" class="box b-bottom"></div>
+
+      <div id="3" class="box b-right b-bottom"></div>
+      <div id="4" class="box b-right b-bottom"></div>
+      <div id="5" class="box b-bottom"></div>
+
+      <div id="6" class="box b-right "></div>
+      <div id="7" class="box b-right "></div>
+      <div id="8" class="box "></div>
+    </div>
+    <div class="msg">Try It !💪</div>
+  </div>
+    <div class="records">
+      <div class="score">
+        <h3>SCORE</h3>
+        <div class="icons">
+          <span class="scores">
+            <i class="fa fa-user"></i>
+            <div class="point-hu points">0</div>
+          </span>
+          <span class="same">
+            
+            <i class="fa fa-ban"></i>
+            <div class="point-dr points">0</div>
+           
+          </span>
+          <span class="desktop">
+            
+            <i class="fa fa-desktop"></i>
+            <div class="point-ai points">0</div>
+            
+          </span>
+        </div>
+      </div>
+      <div class="play">
+        <h3>RESTART</h3>
+        <div class="icons">
+          <div class="reset">
+            <i class="fa fa-refresh"onclick="startGame()"></i>
+          </div>
+          <!-- <div class="play-start">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
